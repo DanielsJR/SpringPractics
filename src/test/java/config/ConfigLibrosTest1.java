@@ -4,8 +4,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
-import injecciones.ServicioLibro;
+
 import injecciones.ServicioLibroMock;
+import injecciones.C1C2C4.ServicioLibro;
 
 @Configuration
 @ComponentScan(basePackages = { PackageNamesTest.INJECCIONES })

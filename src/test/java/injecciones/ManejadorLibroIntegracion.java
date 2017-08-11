@@ -9,6 +9,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import config.ConfigLibros1;
+import injecciones.C1C2C4.ManejadorLibro;
 
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -28,3 +29,5 @@ public class ManejadorLibroIntegracion {
 	    }
 
 }
+
+

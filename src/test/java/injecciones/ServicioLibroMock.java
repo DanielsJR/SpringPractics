@@ -1,5 +1,7 @@
 package injecciones;
 
+import injecciones.C1C2C4.ServicioLibro;
+
 public class ServicioLibroMock extends ServicioLibro {
 	
     private String llave;
@@ -24,11 +26,11 @@ public class ServicioLibroMock extends ServicioLibro {
 		this.nombre=nombre;
 	}
 	@Override
-	public String buscarPorNombre(String key) {
+	public String buscarPorLLave(String key) {
 		return nombre;
 	}
 	@Override
-	public String buscarPorLLave(String nombre) {
+	public String llave(String nombre) {
 		return llave;
 	}
 	

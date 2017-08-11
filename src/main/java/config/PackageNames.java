@@ -12,7 +12,9 @@ public class PackageNames {
 
     public static final String SERVICES= "services";
         
-    public static final String INJECCIONES= "injecciones";
+    public static final String INJECCIONES124= "injecciones.C1C2C4";
+    
+    public static final String INJECCIONES3= "injecciones.C3";
     
 
 }

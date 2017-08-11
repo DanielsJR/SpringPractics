@@ -5,9 +5,9 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-	<bean id="servicioLibro" class="injeccionesTest.ServicioLibro" />
+	<bean id="servicioLibro" class="injecciones.C3.ServicioLibro" />
 	
-	<bean id="manejadorLibro" class="injeccionesTest.ManejadorLibro">
+	<bean id="manejadorLibro" class="injecciones.C3.ManejadorLibro">
 		<property name="ServicioLibro1" ref="servicioLibro" />
 		<property name="ServicioLibro2" ref="servicioLibro" />
 	</bean>

@@ -2,20 +2,23 @@ package injecciones;
 
 import static org.junit.Assert.assertEquals;
 
-import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import config.ConfigLibros1;
 import injecciones.C1C2C4.ServicioLibro;
 
-//test normal sin inyeccion
-public class ServicioLibroTest {
 
-	private ServicioLibro servicioLibro;
-
-	@Before
-	public void before() {
-		this.servicioLibro = new ServicioLibro();
-	}
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(classes = ConfigLibros1.class)
+public class ServicioLibroInjeccionTest {
+	
+	@Autowired
+	private ServicioLibro servicioLibro ;
+    
 
 	@Test
 	public void testAddLibro() {
